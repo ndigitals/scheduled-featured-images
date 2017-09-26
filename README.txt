@@ -1,10 +1,14 @@
 === Scheduled Featured Images ===
 Contributors: tnolte
+Author: Nolte Digital Solutions
+Author URI: https://www.ndigitals.com/
+Plugin URI: https://www.ndigitals.com/wordpress/plugins/scheduled-featured-images-plugin/
 Donate link: https://www.ndigitals.com/donate/
 Tags: images, featured, nds, schedule
-Requires at least: 4.0
+Requires at least: 4.4
 Tested up to: 4.8.2
-Stable tag: trunk
+Requires PHP: 5.5.9
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,11 +19,11 @@ Scheduled Featured Images allows you to attach multiple images to any post-type 
 The idea for this plugin was born out of the need to more easily manage a website that had it's Front Page updated with a new weekly/monthly/etc featured image. The Front Page, and other site Pages, featured image was planned out ahead of time, sometimes for months in advance, so it seemed tedious to have to manually update the featured images whenever they would change. Since the website's theme used the standard WordPress Featured Image functionality, to manage the header/banner image on each page, it seemed to make the most sense to expand on that and provide a way to manage future featured images.
 
 = Features & Development =
+[![Build Status](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images.svg?branch=master)](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images)
 
 * [Roadmap](https://trello.com/b/8mT9hQWj) - Trello
 * [Source Code Repository](https://github.com/ndigitals/nds-wp-scheduled-featured-images) - GitHub
 * [Known Issues](https://github.com/ndigitals/nds-wp-scheduled-featured-images/issues) - GitHub
-* Build Status - [![Build Status](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images.svg?branch=master)](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images)
 
 == Installation ==
 
@@ -31,15 +35,13 @@ If you have any troubles please [contact us](https://www.ndigitals.com/contact/)
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= What will happen to my post-type's existing featured images after I enable the plugin? =
 
-An answer to that question.
+Until the plugin's global settings, `Settings->Featured Images`, are updated to change it's behavior, your existing feature images will remain unchanged.
 
-= What about foo bar? =
+= What will happen to my post-type's featured images if I disable the plugin? =
 
-Answer to foo bar dilemma.
-
-
+Whatever is the currently set/displayed featured image will remain as the current featured image.
 == Screenshots ==
 
 1. Plugin settings.
