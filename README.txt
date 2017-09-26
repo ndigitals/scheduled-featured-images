@@ -1,8 +1,8 @@
 === Scheduled Featured Images ===
-[![Project Stage][project-stage-shield]]
-[![Maintenance][maintenance-shield]]
-[![Awesome][awesome-shield]]
-[![License][license-shield]](LICENSE.md)
+[![GitHub (pre-)release](https://img.shields.io/github/release/qubyte/rubidium/all.svg?style=flat-square)]([![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg?style=flat-square)](https://github.com/ndigitals/nds-wp-scheduled-featured-images.git))
+[![WordPress](https://img.shields.io/wordpress/v/akismet.svg?style=flat-square)](https://develop.svn.wordpress.org/tags/4.8.2/)
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?style=flat-square)]()
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE.md)
 
 Contributors: tnolte
 Author: Nolte Digital Solutions
@@ -24,7 +24,7 @@ Scheduled Featured Images allows you to attach multiple images to any post-type 
 The idea for this plugin was born out of the need to more easily manage a website that had it's Front Page updated with a new weekly/monthly/etc featured image. The Front Page, and other site Pages, featured image was planned out ahead of time, sometimes for months in advance, so it seemed tedious to have to manually update the featured images whenever they would change. Since the website's theme used the standard WordPress Featured Image functionality, to manage the header/banner image on each page, it seemed to make the most sense to expand on that and provide a way to manage future featured images.
 
 = Features & Development =
-[![Travis](https://api.travis-ci.org/ndigitals/nds-wp-scheduled-featured-images.svg)]
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images)
 
 * [Roadmap](https://trello.com/b/8mT9hQWj) - Trello
 * [Source Code Repository](https://github.com/ndigitals/nds-wp-scheduled-featured-images) - GitHub
