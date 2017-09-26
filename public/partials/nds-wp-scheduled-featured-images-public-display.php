@@ -5,9 +5,8 @@
  *
  * This file is used to markup the public-facing aspects of the plugin.
  *
- * @link       https://www.timnolte.com/
+ * @link       https://www.ndigitals.com/
  * @since      1.0.0
- *
  * @package    Nds_Wp_Scheduled_Featured_Images
  * @subpackage Nds_Wp_Scheduled_Featured_Images/public/partials
  */

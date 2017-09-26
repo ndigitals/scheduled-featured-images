@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -8,14 +7,14 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://www.timnolte.com/
+ * @link              https://www.ndigitals.com/
  * @since             1.0.0
  * @package           Nds_Wp_Scheduled_Featured_Images
  *
  * @wordpress-plugin
  * Plugin Name:       Scheduled Featured Images
  * Plugin URI:        https://www.ndigitals.com/wordpress/plugins/scheduled-featured-images-plugin/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Scheduled Featured Images allows you to attach multiple images to any post-type and set them to be the featured image based on a schedule.
  * Version:           1.0.0
  * Author:            Tim Nolte
  * Author URI:        https://www.timnolte.com/

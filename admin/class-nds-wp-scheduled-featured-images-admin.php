@@ -1,21 +1,12 @@
 <?php
-
-/**
- * The admin-specific functionality of the plugin.
- *
- * @link       https://www.timnolte.com/
- * @since      1.0.0
- *
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/admin
- */
-
 /**
  * The admin-specific functionality of the plugin.
  *
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
+ * @link       https://www.ndigitals.com/
+ * @since      1.0.0
  * @package    Nds_Wp_Scheduled_Featured_Images
  * @subpackage Nds_Wp_Scheduled_Featured_Images/admin
  * @author     Tim Nolte <tim.nolte@ndigitals.com>

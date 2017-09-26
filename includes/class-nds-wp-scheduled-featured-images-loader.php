@@ -1,15 +1,4 @@
 <?php
-
-/**
- * Register all actions and filters for the plugin
- *
- * @link       https://www.timnolte.com/
- * @since      1.0.0
- *
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
- */
-
 /**
  * Register all actions and filters for the plugin.
  *
@@ -17,6 +6,8 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
+ * @link       https://www.ndigitals.com/
+ * @since      1.0.0
  * @package    Nds_Wp_Scheduled_Featured_Images
  * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
  * @author     Tim Nolte <tim.nolte@ndigitals.com>

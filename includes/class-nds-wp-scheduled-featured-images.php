@@ -1,18 +1,4 @@
 <?php
-
-/**
- * The file that defines the core plugin class
- *
- * A class definition that includes attributes and functions used across both the
- * public-facing side of the site and the admin area.
- *
- * @link       https://www.timnolte.com/
- * @since      1.0.0
- *
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
- */
-
 /**
  * The core plugin class.
  *
@@ -22,6 +8,7 @@
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
+ * @link       https://www.ndigitals.com/
  * @since      1.0.0
  * @package    Nds_Wp_Scheduled_Featured_Images
  * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
