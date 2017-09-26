@@ -11,7 +11,7 @@
  * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
-class Nds_Wp_Scheduled_Featured_Images_i18n {
+class Nds_Wp_Scheduled_Featured_Images_I18n {
 
 
 	/**

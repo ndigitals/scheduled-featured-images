@@ -74,7 +74,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 	 * Include the following files that make up the plugin:
 	 *
 	 * - Nds_Wp_Scheduled_Featured_Images_Loader. Orchestrates the hooks of the plugin.
-	 * - Nds_Wp_Scheduled_Featured_Images_i18n. Defines internationalization functionality.
+	 * - Nds_Wp_Scheduled_Featured_Images_I18n. Defines internationalization functionality.
 	 * - Nds_Wp_Scheduled_Featured_Images_Admin. Defines all hooks for the admin area.
 	 * - Nds_Wp_Scheduled_Featured_Images_Public. Defines all hooks for the public side of the site.
 	 *
@@ -116,7 +116,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Nds_Wp_Scheduled_Featured_Images_i18n class in order to set the domain and to register the hook
+	 * Uses the Nds_Wp_Scheduled_Featured_Images_I18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -124,7 +124,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Nds_Wp_Scheduled_Featured_Images_i18n();
+		$plugin_i18n = new Nds_Wp_Scheduled_Featured_Images_I18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
