@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?style=flat-square)]()
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg?style=flat-square)](LICENSE.md)
 
-Contributors: tnolte
+Contributors: tnolte, ndigitals
 Author: Nolte Digital Solutions
 Author URI: https://www.ndigitals.com/
 Plugin URI: https://www.ndigitals.com/wordpress/plugins/scheduled-featured-images-plugin/
@@ -23,7 +23,17 @@ Scheduled Featured Images allows you to attach multiple images to any post-type 
 
 The idea for this plugin was born out of the need to more easily manage a website that had it's Front Page updated with a new weekly/monthly/etc featured image. The Front Page, and other site Pages, featured image was planned out ahead of time, sometimes for months in advance, so it seemed tedious to have to manually update the featured images whenever they would change. Since the website's theme used the standard WordPress Featured Image functionality, to manage the header/banner image on each page, it seemed to make the most sense to expand on that and provide a way to manage future featured images.
 
-= Features & Development =
+== Features ==
+
+* Attach Multiple Featured Images to Any Post Type
+ * Scheduled Start and End Date/Time
+ * Overlapping Schedules
+ * Blank Schedules
+* Fallback Options to Allow For Overrides & Defaults
+* User Roles & Permissions
+ * Restrict Who Can Set Per-Post Type Overrides
+
+== Progress & Development ==
 [![Travis](https://img.shields.io/travis/ndigitals/nds-wp-scheduled-featured-images.svg?style=flat-square)](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images)
 
 * [Roadmap](https://trello.com/b/8mT9hQWj) - Trello
