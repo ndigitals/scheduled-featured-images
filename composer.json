@@ -1,0 +1,22 @@
+{
+    "name": "ndigitals/scheduled-featured-images",
+    "description": "Scheduled Featured Images allows you to attach multiple images to any post-type and set them to be the featured imaged based on a schedule.",
+    "type": "wordpress-plugin",
+    "homepage": "https://www.ndigitals.com/wordpress/plugins/scheduled-featured-images-plugin/",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Tim Nolte",
+            "email": "tim.nolte@ndigitals.com",
+            "homepage": "https://www.timnolte.com/"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.1.*",
+        "wp-coding-standards/wpcs": "0.13.*"
+    },
+    "scripts": {
+        "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs",
+        "post-update-cmd" : "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+    }
+}

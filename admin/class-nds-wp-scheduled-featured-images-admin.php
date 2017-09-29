@@ -11,6 +11,14 @@
  * @subpackage Nds_Wp_Scheduled_Featured_Images/admin
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
+
+/**
+ * Plugin administrative functionalities class.
+ * 
+ * @package    Nds_Wp_Scheduled_Featured_Images
+ * @subpackage Nds_Wp_Scheduled_Featured_Images/admin
+ * @author     Tim Nolte <tim.nolte@ndigitals.com>
+ */
 class Nds_Wp_Scheduled_Featured_Images_Admin {
 
 	/**
