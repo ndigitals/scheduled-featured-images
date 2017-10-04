@@ -10,6 +10,7 @@ notifications:
 branches:
   only:
     - master
+    - 1.0.0-dev
 
 cache:
   directories:
