@@ -4,3 +4,7 @@
  *
  * @package    Nds_Wp_Scheduled_Featured_Images
  */
+
+/**
+ * Should remain empty
+ */

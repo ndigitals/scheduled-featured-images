@@ -11,6 +11,14 @@
  * @subpackage Nds_Wp_Scheduled_Featured_Images/public
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
+
+/**
+ * Class that handles all of the public-facing functionality of the plugin.
+ *
+ * @package    Nds_Wp_Scheduled_Featured_Images
+ * @subpackage Nds_Wp_Scheduled_Featured_Images/public
+ * @author     Tim Nolte <tim.nolte@ndigitals.com>
+ */
 class Nds_Wp_Scheduled_Featured_Images_Public {
 
 	/**
