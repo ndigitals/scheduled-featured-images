@@ -1,6 +1,6 @@
 # Scheduled Featured Images #
 [![GitHub (pre-)release](https://img.shields.io/github/release/ndigitals/nds-wp-scheduled-featured-images/all.svg?style=flat-square)](https://github.com/ndigitals/nds-wp-scheduled-featured-images.git)
-[![WordPress](https://img.shields.io/wordpress/v/nds-wp-scheduled-featured-images.svg?style=flat-square)]()
+[![WordPress](https://img.shields.io/wordpress/v/scheduled-featured-images.svg?style=flat-square)]()
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?style=flat-square)]()
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg?style=flat-square)](LICENSE.md)
 
