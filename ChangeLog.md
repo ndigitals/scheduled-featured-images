@@ -1,6 +1,6 @@
-## 1.0.0 (TBA)
+## 1.0.0 (TBD)
 
-* Official Release
+* First public release!
 
 ## Author Information
 

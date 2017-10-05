@@ -64,6 +64,6 @@ Whatever is the currently set/displayed featured image will remain as the curren
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.0 (TBD) =
 * First public release!
 
