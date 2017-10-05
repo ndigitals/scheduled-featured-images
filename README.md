@@ -1,4 +1,5 @@
 # Scheduled Featured Images #
+[![Travis](https://img.shields.io/travis/ndigitals/nds-wp-scheduled-featured-images.svg?style=flat-square)](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images)
 [![GitHub (pre-)release](https://img.shields.io/github/release/ndigitals/nds-wp-scheduled-featured-images/all.svg?style=flat-square)](https://github.com/ndigitals/nds-wp-scheduled-featured-images.git)
 [![WordPress](https://img.shields.io/wordpress/v/scheduled-featured-images.svg?style=flat-square)]()
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?style=flat-square)]()
@@ -23,7 +24,7 @@ Scheduled Featured Images allows you to attach multiple images to any post-type 
 
 The idea for this plugin was born out of the need to more easily manage a website that had it's Front Page updated with a new weekly/monthly/etc featured image. The Front Page, and other site Pages, featured image was planned out ahead of time, sometimes for months in advance, so it seemed tedious to have to manually update the featured images whenever they would change. Since the website's theme used the standard WordPress Featured Image functionality, to manage the header/banner image on each page, it seemed to make the most sense to expand on that and provide a way to manage future featured images.
 
-## Features ##
+### Features ###
 
 * Attach Multiple Featured Images to Any Post Type
  * Scheduled Start and End Date/Time
@@ -33,8 +34,7 @@ The idea for this plugin was born out of the need to more easily manage a websit
 * User Roles & Permissions
  * Restrict Who Can Set Per-Post Type Overrides
 
-## Progress & Development ##
-[![Travis](https://img.shields.io/travis/ndigitals/nds-wp-scheduled-featured-images.svg?style=flat-square)](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images)
+### Progress & Development ###
 
 * [Roadmap](https://trello.com/b/8mT9hQWj) - Trello
 * [Source Code Repository](https://github.com/ndigitals/nds-wp-scheduled-featured-images) - GitHub
@@ -43,8 +43,8 @@ The idea for this plugin was born out of the need to more easily manage a websit
 ## Installation ##
 
 1. Upload the `nds-wp-scheduled-featured-images` plugin to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin.
-1. Configure the plugin via `Settings->Featured Images` to meet your site's needs.
+2. Activate the plugin.
+3. Configure the plugin via `Settings->Featured Images` to meet your site's needs.
 
 If you have any troubles please [contact us](https://www.ndigitals.com/contact/).
 
@@ -66,6 +66,7 @@ Whatever is the currently set/displayed featured image will remain as the curren
 ## Changelog ##
 
 ### Unreleased ###
+
 * Attach multiple images to a post type (i.e. page/post/custome post-type).
 * Set an option start & end date/time for each attached image.
 * Allow for no featured image fallback.
@@ -75,4 +76,5 @@ Whatever is the currently set/displayed featured image will remain as the curren
 * Provides the ability to choose the featured image fallback priority. (i.e. Scheduled Image > Post Type Featured Image > Plugin Default Featured Image > None)
 
 ### 1.0.0 (TBD) ###
+
 * First public release!
