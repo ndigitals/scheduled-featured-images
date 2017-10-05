@@ -21,3 +21,4 @@ sitemap.xml.gz
 wp-config.php
 
 /vendor/
+/wpcs/
