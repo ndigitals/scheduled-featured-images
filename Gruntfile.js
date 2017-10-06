@@ -22,7 +22,7 @@ module.exports = function( grunt ) {
 		wp_readme_to_markdown: {
 			your_target: {
 				files: {
-					'README.md': 'README.txt'
+					'README.md': 'readme.txt'
 				}
 			},
 		},
