@@ -1,5 +1,6 @@
 # Scheduled Featured Images #
 [![Travis](https://img.shields.io/travis/ndigitals/nds-wp-scheduled-featured-images.svg?style=flat-square)](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images)
+[![codecov](https://codecov.io/gh/ndigitals/nds-wp-scheduled-featured-images/branch/master/graph/badge.svg)](https://codecov.io/gh/ndigitals/nds-wp-scheduled-featured-images)
 [![GitHub (pre-)release](https://img.shields.io/github/release/ndigitals/nds-wp-scheduled-featured-images/all.svg?style=flat-square)](https://github.com/ndigitals/nds-wp-scheduled-featured-images.git)
 [![WordPress](https://img.shields.io/wordpress/v/scheduled-featured-images.svg?style=flat-square)]()
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?style=flat-square)]()
