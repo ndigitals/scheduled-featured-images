@@ -1,10 +1,22 @@
+codecov:
+  branch: master
+  branch: 1.0.0-dev
+
 coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+
   status:
     project:
       default:
         target: auto
         threshold: 0.5%
-    patch: off
+      project: yes
+      patch: yes
+      changes: yes
 
 comment:
-  require_changes: true
+  layout: "header, diff, changes, sunburst, uncovered, tree"
+  require_changes: yes
+  behavior: default
