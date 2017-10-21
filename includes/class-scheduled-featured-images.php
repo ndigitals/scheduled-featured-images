@@ -65,7 +65,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'nds-wp-scheduled-featured-images';
+		$this->plugin_name = 'scheduled-featured-images';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -96,24 +96,24 @@ class Nds_Wp_Scheduled_Featured_Images {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-nds-wp-scheduled-featured-images-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-scheduled-featured-images-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-nds-wp-scheduled-featured-images-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-scheduled-featured-images-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-nds-wp-scheduled-featured-images-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-scheduled-featured-images-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-nds-wp-scheduled-featured-images-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-scheduled-featured-images-public.php';
 
 		$this->loader = new Nds_Wp_Scheduled_Featured_Images_Loader();
 

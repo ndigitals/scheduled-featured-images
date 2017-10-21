@@ -1,25 +1,25 @@
 <?php
 /**
- * The admin-specific functionality of the plugin.
+ * The public-facing functionality of the plugin.
  *
  * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the admin-specific stylesheet and JavaScript.
+ * enqueue the public-facing stylesheet and JavaScript.
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
  * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/admin
+ * @subpackage Nds_Wp_Scheduled_Featured_Images/public
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
 /**
- * Plugin administrative functionalities class.
+ * Class that handles all of the public-facing functionality of the plugin.
  *
  * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/admin
+ * @subpackage Nds_Wp_Scheduled_Featured_Images/public
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
-class Nds_Wp_Scheduled_Featured_Images_Admin {
+class Nds_Wp_Scheduled_Featured_Images_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -43,8 +43,8 @@ class Nds_Wp_Scheduled_Featured_Images_Admin {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
-	 * @param    string $plugin_name       The name of this plugin.
-	 * @param    string $version    The version of this plugin.
+	 * @param      string $plugin_name       The name of the plugin.
+	 * @param      string $version    The version of this plugin.
 	 */
 	public function __construct( $plugin_name, $version ) {
 
@@ -54,7 +54,7 @@ class Nds_Wp_Scheduled_Featured_Images_Admin {
 	}
 
 	/**
-	 * Register the stylesheets for the admin area.
+	 * Register the stylesheets for the public-facing side of the site.
 	 *
 	 * @since    1.0.0
 	 */
@@ -72,12 +72,12 @@ class Nds_Wp_Scheduled_Featured_Images_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/nds-wp-scheduled-featured-images-admin.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/scheduled-featured-images-public.css', array(), $this->version, 'all' );
 
 	}
 
 	/**
-	 * Register the JavaScript for the admin area.
+	 * Register the JavaScript for the public-facing side of the site.
 	 *
 	 * @since    1.0.0
 	 */
@@ -95,7 +95,7 @@ class Nds_Wp_Scheduled_Featured_Images_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/nds-wp-scheduled-featured-images-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/scheduled-featured-images-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 

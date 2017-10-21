@@ -20,7 +20,7 @@
  * Author URI:        https://www.timnolte.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       nds-wp-scheduled-featured-images
+ * Text Domain:       scheduled-featured-images
  * Domain Path:       /languages
  */
 
@@ -33,30 +33,30 @@ define( 'PLUGIN_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-nds-wp-scheduled-featured-images-activator.php
+ * This action is documented in includes/class-scheduled-featured-images-activator.php
  */
-function activate_nds_wp_scheduled_featured_images() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-nds-wp-scheduled-featured-images-activator.php';
+function activate_scheduled_featured_images() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images-activator.php';
 	Nds_Wp_Scheduled_Featured_Images_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-nds-wp-scheduled-featured-images-deactivator.php
+ * This action is documented in includes/class-scheduled-featured-images-deactivator.php
  */
-function deactivate_nds_wp_scheduled_featured_images() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-nds-wp-scheduled-featured-images-deactivator.php';
+function deactivate_scheduled_featured_images() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images-deactivator.php';
 	Nds_Wp_Scheduled_Featured_Images_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_nds_wp_scheduled_featured_images' );
-register_deactivation_hook( __FILE__, 'deactivate_nds_wp_scheduled_featured_images' );
+register_activation_hook( __FILE__, 'activate_scheduled_featured_images' );
+register_deactivation_hook( __FILE__, 'deactivate_scheduled_featured_images' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-nds-wp-scheduled-featured-images.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images.php';
 
 /**
  * Begins execution of the plugin.
@@ -67,10 +67,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-nds-wp-scheduled-featured-
  *
  * @since    1.0.0
  */
-function run_nds_wp_scheduled_featured_images() {
+function run_scheduled_featured_images() {
 
 	$plugin = new Nds_Wp_Scheduled_Featured_Images();
 	$plugin->run();
 
 }
-run_nds_wp_scheduled_featured_images();
+run_scheduled_featured_images();

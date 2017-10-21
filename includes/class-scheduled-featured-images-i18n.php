@@ -27,7 +27,7 @@ class Nds_Wp_Scheduled_Featured_Images_I18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'nds-wp-scheduled-featured-images',
+			'scheduled-featured-images',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
