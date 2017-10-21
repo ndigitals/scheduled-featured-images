@@ -1,6 +1,6 @@
 === Scheduled Featured Images ===
-[![Travis](https://img.shields.io/travis/ndigitals/nds-wp-scheduled-featured-images.svg?style=flat-square)](https://travis-ci.org/ndigitals/nds-wp-scheduled-featured-images)
-[![GitHub (pre-)release](https://img.shields.io/github/release/ndigitals/nds-wp-scheduled-featured-images/all.svg?style=flat-square)](https://github.com/ndigitals/nds-wp-scheduled-featured-images.git)
+[![Travis](https://img.shields.io/travis/ndigitals/scheduled-featured-images.svg?style=flat-square)](https://travis-ci.org/ndigitals/scheduled-featured-images)
+[![GitHub (pre-)release](https://img.shields.io/github/release/ndigitals/scheduled-featured-images/all.svg?style=flat-square)](https://github.com/ndigitals/scheduled-featured-images.git)
 [![WordPress](https://img.shields.io/wordpress/v/scheduled-featured-images.svg?style=flat-square)]()
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?style=flat-square)]()
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg?style=flat-square)](LICENSE.md)
@@ -37,12 +37,12 @@ The idea for this plugin was born out of the need to more easily manage a websit
 = Progress & Development =
 
 * [Roadmap](https://trello.com/b/8mT9hQWj) - Trello
-* [Source Code Repository](https://github.com/ndigitals/nds-wp-scheduled-featured-images) - GitHub
-* [Known Issues](https://github.com/ndigitals/nds-wp-scheduled-featured-images/issues) - GitHub
+* [Source Code Repository](https://github.com/ndigitals/scheduled-featured-images) - GitHub
+* [Known Issues](https://github.com/ndigitals/scheduled-featured-images/issues) - GitHub
 
 == Installation ==
 
-1. Upload the `nds-wp-scheduled-featured-images` plugin to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the `scheduled-featured-images` plugin to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin.
 3. Configure the plugin via `Settings->Featured Images` to meet your site's needs.
 
