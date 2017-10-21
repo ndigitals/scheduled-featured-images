@@ -7,19 +7,19 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/admin
+ * @package    Scheduled_Featured_Images
+ * @subpackage Scheduled_Featured_Images/admin
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
 /**
  * Plugin administrative functionalities class.
  *
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/admin
+ * @package    Scheduled_Featured_Images
+ * @subpackage Scheduled_Featured_Images/admin
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
-class Nds_Wp_Scheduled_Featured_Images_Admin {
+class Scheduled_Featured_Images_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -64,10 +64,10 @@ class Nds_Wp_Scheduled_Featured_Images_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Nds_Wp_Scheduled_Featured_Images_Loader as all of the hooks are defined
+		 * defined in Scheduled_Featured_Images_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Nds_Wp_Scheduled_Featured_Images_Loader will then create the relationship
+		 * The Scheduled_Featured_Images_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -87,10 +87,10 @@ class Nds_Wp_Scheduled_Featured_Images_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Nds_Wp_Scheduled_Featured_Images_Loader as all of the hooks are defined
+		 * defined in Scheduled_Featured_Images_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Nds_Wp_Scheduled_Featured_Images_Loader will then create the relationship
+		 * The Scheduled_Featured_Images_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */

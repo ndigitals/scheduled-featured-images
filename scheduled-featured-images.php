@@ -9,7 +9,7 @@
  *
  * @link              https://www.ndigitals.com/
  * @since             1.0.0
- * @package           Nds_Wp_Scheduled_Featured_Images
+ * @package           Scheduled_Featured_Images
  *
  * @wordpress-plugin
  * Plugin Name:       Scheduled Featured Images
@@ -37,7 +37,7 @@ define( 'PLUGIN_VERSION', '1.0.0' );
  */
 function activate_scheduled_featured_images() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images-activator.php';
-	Nds_Wp_Scheduled_Featured_Images_Activator::activate();
+	Scheduled_Featured_Images_Activator::activate();
 }
 
 /**
@@ -46,7 +46,7 @@ function activate_scheduled_featured_images() {
  */
 function deactivate_scheduled_featured_images() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images-deactivator.php';
-	Nds_Wp_Scheduled_Featured_Images_Deactivator::deactivate();
+	Scheduled_Featured_Images_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_scheduled_featured_images' );
@@ -69,7 +69,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images.
  */
 function run_scheduled_featured_images() {
 
-	$plugin = new Nds_Wp_Scheduled_Featured_Images();
+	$plugin = new Scheduled_Featured_Images();
 	$plugin->run();
 
 }

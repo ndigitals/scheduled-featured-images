@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'nds-wp-scheduled-featured-images',
+				textdomain: 'scheduled-featured-images',
 			},
 			update_all_domains: {
 				options: {
@@ -31,8 +31,8 @@ module.exports = function( grunt ) {
 			target: {
 				options: {
 					domainPath: '/languages',
-					mainFile: 'nds-wp-scheduled-featured-images.php',
-					potFilename: 'nds-wp-scheduled-featured-images.pot',
+					mainFile: 'scheduled-featured-images.php',
+					potFilename: 'scheduled-featured-images.pot',
 					potHeaders: {
 						poedit: true,
 						'x-poedit-keywordslist': true

@@ -8,19 +8,19 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
+ * @package    Scheduled_Featured_Images
+ * @subpackage Scheduled_Featured_Images/includes
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
 /**
  * The core plugin class.
  *
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
+ * @package    Scheduled_Featured_Images
+ * @subpackage Scheduled_Featured_Images/includes
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
-class Nds_Wp_Scheduled_Featured_Images {
+class Scheduled_Featured_Images {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -28,7 +28,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Nds_Wp_Scheduled_Featured_Images_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Scheduled_Featured_Images_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -79,10 +79,10 @@ class Nds_Wp_Scheduled_Featured_Images {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Nds_Wp_Scheduled_Featured_Images_Loader. Orchestrates the hooks of the plugin.
-	 * - Nds_Wp_Scheduled_Featured_Images_I18n. Defines internationalization functionality.
-	 * - Nds_Wp_Scheduled_Featured_Images_Admin. Defines all hooks for the admin area.
-	 * - Nds_Wp_Scheduled_Featured_Images_Public. Defines all hooks for the public side of the site.
+	 * - Scheduled_Featured_Images_Loader. Orchestrates the hooks of the plugin.
+	 * - Scheduled_Featured_Images_I18n. Defines internationalization functionality.
+	 * - Scheduled_Featured_Images_Admin. Defines all hooks for the admin area.
+	 * - Scheduled_Featured_Images_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -115,14 +115,14 @@ class Nds_Wp_Scheduled_Featured_Images {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-scheduled-featured-images-public.php';
 
-		$this->loader = new Nds_Wp_Scheduled_Featured_Images_Loader();
+		$this->loader = new Scheduled_Featured_Images_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Nds_Wp_Scheduled_Featured_Images_I18n class in order to set the domain and to register the hook
+	 * Uses the Scheduled_Featured_Images_I18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -130,7 +130,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Nds_Wp_Scheduled_Featured_Images_I18n();
+		$plugin_i18n = new Scheduled_Featured_Images_I18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -145,7 +145,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Nds_Wp_Scheduled_Featured_Images_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Scheduled_Featured_Images_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -161,7 +161,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Nds_Wp_Scheduled_Featured_Images_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Scheduled_Featured_Images_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -192,7 +192,7 @@ class Nds_Wp_Scheduled_Featured_Images {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Nds_Wp_Scheduled_Featured_Images_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Scheduled_Featured_Images_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

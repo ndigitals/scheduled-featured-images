@@ -8,19 +8,19 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
+ * @package    Scheduled_Featured_Images
+ * @subpackage Scheduled_Featured_Images/includes
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
 /**
  * Class to register all actions and filters for the plugin.
  *
- * @package    Nds_Wp_Scheduled_Featured_Images
- * @subpackage Nds_Wp_Scheduled_Featured_Images/includes
+ * @package    Scheduled_Featured_Images
+ * @subpackage Scheduled_Featured_Images/includes
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
-class Nds_Wp_Scheduled_Featured_Images_Loader {
+class Scheduled_Featured_Images_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

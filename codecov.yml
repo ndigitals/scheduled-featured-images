@@ -1,5 +1,6 @@
 codecov:
   branch: master
+  branch: integration
   branch: 1.0.0-dev
   notify:
     after_n_builds: null

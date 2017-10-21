@@ -45,7 +45,7 @@ Code style in PHP is enforced using [PHP_CodeSniffer](https://github.com/squizla
 
 ### Code Coverage
 
-Code coverage is measured for each PR using the [codecov.io](https://codecov.io/gh/WordPress/gutenberg) tool. [Code coverage](https://en.wikipedia.org/wiki/Code_coverage) is a way of measuring the amount of code covered by the tests in the test suite of a project.  In Gutenberg, it is currently measured for JavaScript code only.
+Code coverage is measured for each PR using the [codecov.io](https://codecov.io/gh/ndigitals/scheduled-featured-images) tool. [Code coverage](https://en.wikipedia.org/wiki/Code_coverage) is a way of measuring the amount of code covered by the tests in the test suite of a project.  In Gutenberg, it is currently measured for JavaScript code only.
 
 # Additional Resources
 
