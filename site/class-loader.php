@@ -7,19 +7,21 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    Scheduled_Featured_Images
- * @subpackage Scheduled_Featured_Images/public
+ * @package    NDS_WP_ScheduledFeaturedImages
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Site
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
+
+namespace NDS_WP_ScheduledFeaturedImages\Site;
 
 /**
  * Class that handles all of the public-facing functionality of the plugin.
  *
- * @package    Scheduled_Featured_Images
- * @subpackage Scheduled_Featured_Images/public
+ * @package    NDS_WP_ScheduledFeaturedImages
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Site
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
-class Scheduled_Featured_Images_Public {
+class Loader {
 
 	/**
 	 * The ID of this plugin.
@@ -72,7 +74,7 @@ class Scheduled_Featured_Images_Public {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/scheduled-featured-images-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/public.min.css', array(), $this->version, 'all' );
 
 	}
 
@@ -95,7 +97,7 @@ class Scheduled_Featured_Images_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/scheduled-featured-images-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/public.min.js', array( 'jquery' ), $this->version, false );
 
 	}
 

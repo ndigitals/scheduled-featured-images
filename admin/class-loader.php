@@ -7,19 +7,21 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    Scheduled_Featured_Images
- * @subpackage Scheduled_Featured_Images/admin
+ * @package    NDS_WP_ScheduledFeaturedImages
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Admin
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
+
+namespace NDS_WP_ScheduledFeaturedImages\Admin;
 
 /**
  * Plugin administrative functionalities class.
  *
- * @package    Scheduled_Featured_Images
- * @subpackage Scheduled_Featured_Images/admin
+ * @package    NDS_WP_ScheduledFeaturedImages
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Admin
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
-class Scheduled_Featured_Images_Admin {
+class Loader {
 
 	/**
 	 * The ID of this plugin.
@@ -64,15 +66,15 @@ class Scheduled_Featured_Images_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Scheduled_Featured_Images_Loader as all of the hooks are defined
+		 * defined in NDS_WP_ScheduledFeaturedImages\Includes\Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Scheduled_Featured_Images_Loader will then create the relationship
+		 * The NDS_WP_ScheduledFeaturedImages\Includes\Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/scheduled-featured-images-admin.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/admin.min.css', array(), $this->version, 'all' );
 
 	}
 
@@ -87,15 +89,15 @@ class Scheduled_Featured_Images_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Scheduled_Featured_Images_Loader as all of the hooks are defined
+		 * defined in NDS_WP_ScheduledFeaturedImages\Includes\Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Scheduled_Featured_Images_Loader will then create the relationship
+		 * The NDS_WP_ScheduledFeaturedImages\Includes\Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/scheduled-featured-images-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/admin.min.js', array( 'jquery' ), $this->version, false );
 
 	}
 

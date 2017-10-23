@@ -42,12 +42,48 @@ module.exports = function( grunt ) {
 				}
 			}
 		},
+		
+		cssmin: {
+			target: {
+				files: [
+					{
+						expand: true,
+						cwd: 'admin/css',
+						src: ['*.css', '!*.min.css'],
+						dest: 'admin/css',
+						ext: '.min.css'
+					},
+					{
+						expand: true,
+						cwd: 'public/css',
+						src: ['*.css', '!*.min.css'],
+						dest: 'public/css',
+						ext: '.min.css'
+					}
+			 ]
+			}
+		},
+		
+		uglify: {
+			my_target: {
+				options: {
+					sourceMap: true
+				},
+				files: {
+					'admin/js/admin.min.js': ['admin/js/admin.js'],
+					'public/js/public.min.js': ['public/js/public.js']
+				}
+			}
+		},
 	} );
 
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-wp-readme-to-markdown' );
+	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
+	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 	grunt.registerTask( 'i18n', ['addtextdomain', 'makepot'] );
 	grunt.registerTask( 'readme', ['wp_readme_to_markdown'] );
+	grunt.registerTask( 'minify', ['cssmin', 'uglify'] );
 
 	grunt.util.linefeed = '\n';
 

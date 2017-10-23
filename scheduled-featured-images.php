@@ -9,7 +9,7 @@
  *
  * @link              https://www.ndigitals.com/
  * @since             1.0.0
- * @package           Scheduled_Featured_Images
+ * @package           NDS_WP_ScheduledFeaturedImages
  *
  * @wordpress-plugin
  * Plugin Name:       Scheduled Featured Images
@@ -24,10 +24,13 @@
  * Domain Path:       /languages
  */
 
+namespace NDS_WP_ScheduledFeaturedImages;
+use NDS_WP_ScheduledFeaturedImages\Includes;
+
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-	die;
-}
+defined( 'WPINC' ) || die;
+
+require_once 'lib/autoload.php';
 
 define( 'PLUGIN_VERSION', '1.0.0' );
 
@@ -36,8 +39,7 @@ define( 'PLUGIN_VERSION', '1.0.0' );
  * This action is documented in includes/class-scheduled-featured-images-activator.php
  */
 function activate_scheduled_featured_images() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images-activator.php';
-	Scheduled_Featured_Images_Activator::activate();
+	Includes\Activator::activate();
 }
 
 /**
@@ -45,18 +47,11 @@ function activate_scheduled_featured_images() {
  * This action is documented in includes/class-scheduled-featured-images-deactivator.php
  */
 function deactivate_scheduled_featured_images() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images-deactivator.php';
-	Scheduled_Featured_Images_Deactivator::deactivate();
+	Includes\Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_scheduled_featured_images' );
 register_deactivation_hook( __FILE__, 'deactivate_scheduled_featured_images' );
-
-/**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
- */
-require plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images.php';
 
 /**
  * Begins execution of the plugin.
@@ -69,7 +64,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-scheduled-featured-images.
  */
 function run_scheduled_featured_images() {
 
-	$plugin = new Scheduled_Featured_Images();
+	$plugin = new Includes\Core();
 	$plugin->run();
 
 }

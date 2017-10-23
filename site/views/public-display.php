@@ -6,8 +6,8 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    Scheduled_Featured_Images
- * @subpackage Scheduled_Featured_Images/public/partials
+ * @package    NDS_WP_ScheduledFeaturedImages
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Site\Views
  */
 
 ?>

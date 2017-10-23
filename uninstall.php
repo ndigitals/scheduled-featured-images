@@ -21,7 +21,7 @@
  * @link       https://www.timnolte.com/
  * @since      1.0.0
  *
- * @package    Scheduled_Featured_Images
+ * @package    NDS_WP_ScheduledFeaturedImages
  */
 
 // If uninstall not called from WordPress, then exit.

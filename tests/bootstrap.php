@@ -2,7 +2,7 @@
 /**
  * PHPUnit bootstrap file
  *
- * @package Scheduled_Featured_Images
+ * @package NDS_WP_ScheduledFeaturedImages
  */
 
 $_tests_dir = getenv( 'WP_TESTS_DIR' );
