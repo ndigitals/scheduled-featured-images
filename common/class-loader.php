@@ -9,17 +9,17 @@
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
  * @package    NDS_WP_ScheduledFeaturedImages
- * @subpackage NDS_WP_ScheduledFeaturedImages\Includes
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Common
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
-namespace NDS_WP_ScheduledFeaturedImages\Includes;
+namespace NDS_WP_ScheduledFeaturedImages\Common;
 
 /**
  * Class to register all actions and filters for the plugin.
  *
  * @package    NDS_WP_ScheduledFeaturedImages
- * @subpackage NDS_WP_ScheduledFeaturedImages\Includes
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Common
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 class Loader {

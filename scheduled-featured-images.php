@@ -25,12 +25,17 @@
  */
 
 namespace NDS_WP_ScheduledFeaturedImages;
-use NDS_WP_ScheduledFeaturedImages\Includes;
+
+if ( ! function_exists( 'version_compare' ) || version_compare( PHP_VERSION, '5.3.0', '<' ) ) {
+	exit;
+}
 
 // If this file is called directly, abort.
 defined( 'WPINC' ) || die;
 
 require_once 'lib/autoload.php';
+
+use NDS_WP_ScheduledFeaturedImages\Common;
 
 define( 'PLUGIN_VERSION', '1.0.0' );
 
@@ -39,7 +44,7 @@ define( 'PLUGIN_VERSION', '1.0.0' );
  * This action is documented in includes/class-scheduled-featured-images-activator.php
  */
 function activate_scheduled_featured_images() {
-	Includes\Activator::activate();
+	Common\Activator::activate();
 }
 
 /**
@@ -47,7 +52,7 @@ function activate_scheduled_featured_images() {
  * This action is documented in includes/class-scheduled-featured-images-deactivator.php
  */
 function deactivate_scheduled_featured_images() {
-	Includes\Deactivator::deactivate();
+	Common\Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_scheduled_featured_images' );
@@ -64,7 +69,7 @@ register_deactivation_hook( __FILE__, 'deactivate_scheduled_featured_images' );
  */
 function run_scheduled_featured_images() {
 
-	$plugin = new Includes\Core();
+	$plugin = new Common\Core();
 	$plugin->run();
 
 }

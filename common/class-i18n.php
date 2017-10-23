@@ -5,18 +5,18 @@
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
  * @package    NDS_WP_ScheduledFeaturedImages
- * @subpackage NDS_WP_ScheduledFeaturedImages\Includes
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Common
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
-namespace NDS_WP_ScheduledFeaturedImages\Includes;
+namespace NDS_WP_ScheduledFeaturedImages\Common;
 
 /**
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
  * @package    NDS_WP_ScheduledFeaturedImages
- * @subpackage NDS_WP_ScheduledFeaturedImages\Includes
+ * @subpackage NDS_WP_ScheduledFeaturedImages\Common
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 class I18n {

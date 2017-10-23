@@ -66,10 +66,10 @@ class Loader {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in NDS_WP_ScheduledFeaturedImages\Includes\Loader as all of the hooks are defined
+		 * defined in NDS_WP_ScheduledFeaturedImages\Common\Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The NDS_WP_ScheduledFeaturedImages\Includes\Loader will then create the relationship
+		 * The NDS_WP_ScheduledFeaturedImages\Common\Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -89,10 +89,10 @@ class Loader {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in NDS_WP_ScheduledFeaturedImages\Includes\Loader as all of the hooks are defined
+		 * defined in NDS_WP_ScheduledFeaturedImages\Common\Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The NDS_WP_ScheduledFeaturedImages\Includes\Loader will then create the relationship
+		 * The NDS_WP_ScheduledFeaturedImages\Common\Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
