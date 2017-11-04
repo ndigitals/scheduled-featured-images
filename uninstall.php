@@ -18,10 +18,10 @@
  * For more information, see the following discussion:
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
- * @link       https://www.timnolte.com/
+ * @link       https://www.ndigitals.com/
  * @since      1.0.0
  *
- * @package    NDS_WP_ScheduledFeaturedImages
+ * @package    NDS_ScheduledFeaturedImages
  */
 
 // If uninstall not called from WordPress, then exit.

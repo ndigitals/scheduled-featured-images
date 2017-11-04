@@ -2,7 +2,7 @@
 /**
  * Silence is golden
  *
- * @package    NDS_WP_ScheduledFeaturedImages
+ * @package    NDS_ScheduledFeaturedImages
  */
 
 /**

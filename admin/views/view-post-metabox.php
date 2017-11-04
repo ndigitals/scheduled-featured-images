@@ -1,13 +1,13 @@
 <?php
 /**
- * Provide a public-facing view for the plugin
+ * Provide a admin area view for the plugin
  *
- * This file is used to markup the public-facing aspects of the plugin.
+ * This file is used to markup the admin-facing aspects of the plugin.
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
  * @package    NDS_ScheduledFeaturedImages
- * @subpackage NDS_ScheduledFeaturedImages\Site\Views
+ * @subpackage NDS_ScheduledFeaturedImages\Admin\Views
  */
 
 ?>

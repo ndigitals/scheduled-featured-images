@@ -3,7 +3,7 @@
  * Automatically locates and loads files based on their namespaces and their
  * file names whenever they are instantiated.
  *
- * @package NDS_WP_ScheduledFeaturedImages
+ * @package NDS_ScheduledFeaturedImages
  */
 
 spl_autoload_register(

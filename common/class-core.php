@@ -8,22 +8,22 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    NDS_WP_ScheduledFeaturedImages
- * @subpackage NDS_WP_ScheduledFeaturedImages\Common
+ * @package    NDS_ScheduledFeaturedImages
+ * @subpackage NDS_ScheduledFeaturedImages\Common
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
-namespace NDS_WP_ScheduledFeaturedImages\Common;
+namespace NDS_ScheduledFeaturedImages\Common;
 
-use NDS_WP_ScheduledFeaturedImages\Common;
-use NDS_WP_ScheduledFeaturedImages\Admin;
-use NDS_WP_ScheduledFeaturedImages\Site;
+use NDS_ScheduledFeaturedImages\Common;
+use NDS_ScheduledFeaturedImages\Admin;
+use NDS_ScheduledFeaturedImages\Site;
 
 /**
  * The core plugin class.
  *
- * @package    NDS_WP_ScheduledFeaturedImages
- * @subpackage NDS_WP_ScheduledFeaturedImages\Common
+ * @package    NDS_ScheduledFeaturedImages
+ * @subpackage NDS_ScheduledFeaturedImages\Common
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 class Core {

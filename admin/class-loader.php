@@ -7,18 +7,18 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    NDS_WP_ScheduledFeaturedImages
- * @subpackage NDS_WP_ScheduledFeaturedImages\Admin
+ * @package    NDS_ScheduledFeaturedImages
+ * @subpackage NDS_ScheduledFeaturedImages\Admin
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
-namespace NDS_WP_ScheduledFeaturedImages\Admin;
+namespace NDS_ScheduledFeaturedImages\Admin;
 
 /**
  * Plugin administrative functionalities class.
  *
- * @package    NDS_WP_ScheduledFeaturedImages
- * @subpackage NDS_WP_ScheduledFeaturedImages\Admin
+ * @package    NDS_ScheduledFeaturedImages
+ * @subpackage NDS_ScheduledFeaturedImages\Admin
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 class Loader {
@@ -66,10 +66,10 @@ class Loader {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in NDS_WP_ScheduledFeaturedImages\Common\Loader as all of the hooks are defined
+		 * defined in NDS_ScheduledFeaturedImages\Common\Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The NDS_WP_ScheduledFeaturedImages\Common\Loader will then create the relationship
+		 * The NDS_ScheduledFeaturedImages\Common\Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -89,10 +89,10 @@ class Loader {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in NDS_WP_ScheduledFeaturedImages\Common\Loader as all of the hooks are defined
+		 * defined in NDS_ScheduledFeaturedImages\Common\Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The NDS_WP_ScheduledFeaturedImages\Common\Loader will then create the relationship
+		 * The NDS_ScheduledFeaturedImages\Common\Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
