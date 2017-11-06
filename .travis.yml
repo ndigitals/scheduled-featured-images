@@ -66,18 +66,18 @@ before_script:
   - |
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
       composer global require wp-coding-standards/wpcs
-      phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
+      vendor/bin/phpcs
     fi
 
 script:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
-      phpunit --coverage-clover=coverage.xml
-      WP_MULTISITE=1 phpunit --coverage-clover=coverage.xml
+      vendor/bin/phpunit --coverage-clover=coverage.xml
+      WP_MULTISITE=1 vendor/bin/phpunit --coverage-clover=coverage.xml
     fi
   - |
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
-      phpcs
+      vendor/bin/phpcs
     fi
 
 after_success:
