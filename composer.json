@@ -17,6 +17,14 @@
         "phpunit/phpunit": "^4.8",
         "phpunit/dbunit": "^2.0"
     },
+    "autoload": {
+        "psr-4": {
+            "NDS\\ScheduledFeaturedImages\\": [
+              "src/",
+              "tests/"
+            ]
+        }
+    },
     "scripts": {
         "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs",
         "post-update-cmd" : "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"

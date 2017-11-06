@@ -8,22 +8,20 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    NDS_ScheduledFeaturedImages
- * @subpackage NDS_ScheduledFeaturedImages\Common
+ * @package    NDS\ScheduledFeaturedImages
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 
-namespace NDS_ScheduledFeaturedImages\Common;
+namespace NDS\ScheduledFeaturedImages;
 
-use NDS_ScheduledFeaturedImages\Common;
-use NDS_ScheduledFeaturedImages\Admin;
-use NDS_ScheduledFeaturedImages\Site;
+use NDS\ScheduledFeaturedImages\Common;
+use NDS\ScheduledFeaturedImages\Admin;
+use NDS\ScheduledFeaturedImages\Frontend;
 
 /**
  * The core plugin class.
  *
- * @package    NDS_ScheduledFeaturedImages
- * @subpackage NDS_ScheduledFeaturedImages\Common
+ * @package    NDS\ScheduledFeaturedImages
  * @author     Tim Nolte <tim.nolte@ndigitals.com>
  */
 class Core {
@@ -66,18 +64,21 @@ class Core {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'PLUGIN_VERSION' ) ) {
-			$this->version = PLUGIN_VERSION;
+		if ( defined( 'NDS_SFI_VERSION' ) ) {
+			$this->version = NDS_SFI_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'scheduled-featured-images';
+		if ( defined( 'NDS_SFI_NAME' ) ) {
+			$this->plugin_name = NDS_SFI_NAME;
+		} else {
+			$this->plugin_name = 'scheduled-featured-images';
+		}
 
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
-
 	}
 
 	/**
@@ -98,7 +99,7 @@ class Core {
 	 */
 	private function load_dependencies() {
 
-		$this->loader = new Loader();
+		$this->loader = new Common\Loader();
 
 	}
 
@@ -113,7 +114,7 @@ class Core {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new I18n();
+		$plugin_i18n = new Common\I18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -144,7 +145,7 @@ class Core {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Site\Loader( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Frontend\Loader( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );

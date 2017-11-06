@@ -6,8 +6,8 @@
  *
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
- * @package    NDS_ScheduledFeaturedImages
- * @subpackage NDS_ScheduledFeaturedImages\Site\Views
+ * @package    NDS\ScheduledFeaturedImages
+ * @subpackage NDS\ScheduledFeaturedImages\Site\Views
  */
 
 ?>

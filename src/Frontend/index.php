@@ -2,7 +2,7 @@
 /**
  * Silence is golden
  *
- * @package    NDS_ScheduledFeaturedImages
+ * @package    NDS\ScheduledFeaturedImages
  */
 
 /**

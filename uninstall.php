@@ -21,8 +21,10 @@
  * @link       https://www.ndigitals.com/
  * @since      1.0.0
  *
- * @package    NDS_ScheduledFeaturedImages
+ * @package    NDS\ScheduledFeaturedImages
  */
+
+namespace NDS\ScheduledFeaturedImages;
 
 // If uninstall not called from WordPress, then exit.
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {

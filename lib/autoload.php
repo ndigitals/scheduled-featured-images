@@ -3,7 +3,7 @@
  * Automatically locates and loads files based on their namespaces and their
  * file names whenever they are instantiated.
  *
- * @package NDS_ScheduledFeaturedImages
+ * @package NDS\ScheduledFeaturedImages
  */
 
 spl_autoload_register(

@@ -9,7 +9,7 @@
  *
  * @link              https://www.ndigitals.com/
  * @since             1.0.0
- * @package           NDS_ScheduledFeaturedImages
+ * @package           NDS\ScheduledFeaturedImages
  *
  * @wordpress-plugin
  * Plugin Name:       Scheduled Featured Images
@@ -24,7 +24,7 @@
  * Domain Path:       /languages
  */
 
-namespace NDS_ScheduledFeaturedImages;
+namespace NDS\ScheduledFeaturedImages;
 
 // Due to namespace usage we require PHP >= 5.3.0
 if ( ! function_exists( 'version_compare' ) || version_compare( PHP_VERSION, '5.3.0', '<' ) ) {
@@ -33,6 +33,14 @@ if ( ! function_exists( 'version_compare' ) || version_compare( PHP_VERSION, '5.
 
 // If this file is called directly, abort.
 defined( 'WPINC' ) || die;
+
+/**
+ * Define plugin name global.
+ */
+if ( !defined( 'NDS_SFI_NAME' ) )
+{
+	define( 'NDS_SFI_NAME', 'scheduled-featured-images' );
+}
 
 /**
  * Define plugin version global.
@@ -68,28 +76,17 @@ if ( !defined( 'NDS_SFI_URL' ) )
 	define( 'NDS_SFI_URL', str_replace( array( 'http:', 'https:' ), '', plugin_dir_url( __FILE__ ) ) );
 }
 
-require_once 'lib/autoload.php';
-
-use NDS_ScheduledFeaturedImages\Common;
-
 /**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-scheduled-featured-images-activator.php
+ * Check for an load the PSR-4 autoloader
  */
-function activate_scheduled_featured_images() {
-	Common\Activator::activate();
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+	require __DIR__ . '/vendor/autoload.php';
 }
 
-/**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-scheduled-featured-images-deactivator.php
- */
-function deactivate_scheduled_featured_images() {
-	Common\Deactivator::deactivate();
-}
+use NDS\ScheduledFeaturedImages\Common;
 
-register_activation_hook( __FILE__, 'activate_scheduled_featured_images' );
-register_deactivation_hook( __FILE__, 'deactivate_scheduled_featured_images' );
+register_activation_hook( __FILE__, array( __NAMESPACE__ . 'Common\Activator', 'activate' ) );
+register_deactivation_hook( __FILE__, array( __NAMESPACE__ . 'Common\Deactivator', 'deactivate' ) );
 
 /**
  * Begins execution of the plugin.
@@ -100,10 +97,6 @@ register_deactivation_hook( __FILE__, 'deactivate_scheduled_featured_images' );
  *
  * @since    1.0.0
  */
-function run_scheduled_featured_images() {
 
-	$plugin = new Common\Core();
-	$plugin->run();
-
-}
-run_scheduled_featured_images();
+$plugin = new Core();
+$plugin->run();
