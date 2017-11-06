@@ -12,6 +12,9 @@
     "nds",
     "schedule"
   ],
+  "config": {
+    "php_namespace": "NDS\\ScheduledFeaturedImages"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ndigitals/scheduled-featured-images.git"
