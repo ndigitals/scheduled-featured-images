@@ -20,14 +20,22 @@ cache:
 
 matrix:
   include:
-    - php: 7.1
+    - php: 5.3
       env: WP_VERSION=latest WP_MULTISITE=0
-    - php: 7.1
+    - php: 5.3
       env: WP_VERSION=latest WP_MULTISITE=1
-    - php: 7.0
+    - php: 5.4
       env: WP_VERSION=latest WP_MULTISITE=0
-    - php: 7.0
+    - php: 5.4
       env: WP_VERSION=latest WP_MULTISITE=1
+    - php: 5.5
+      env: WP_VERSION=latest WP_MULTISITE=0
+    - php: 5.5
+      env: WP_VERSION=latest WP_MULTISITE=1
+    - php: 5.6
+      env: WP_TRAVISCI=phpcs WP_MULTISITE=0
+    - php: 5.6
+      env: WP_TRAVISCI=phpcs WP_MULTISITE=1
     - php: 5.6
       env: WP_VERSION=4.4 WP_MULTISITE=0
     - php: 5.6
@@ -36,18 +44,15 @@ matrix:
       env: WP_VERSION=latest WP_MULTISITE=0
     - php: 5.6
       env: WP_VERSION=latest WP_MULTISITE=1
-    - php: 5.6
-      env: WP_VERSION=trunk WP_MULTISITE=0
-    - php: 5.6
-      env: WP_VERSION=trunk WP_MULTISITE=1
-    - php: 5.6
-      env: WP_TRAVISCI=phpcs WP_MULTISITE=0
-    - php: 5.6
-      env: WP_TRAVISCI=phpcs WP_MULTISITE=1
-    - php: 5.5.9
+    - php: 7.0
       env: WP_VERSION=latest WP_MULTISITE=0
-    - php: 5.5.9
+    - php: 7.0
       env: WP_VERSION=latest WP_MULTISITE=1
+    - php: 7.1
+      env: WP_VERSION=latest WP_MULTISITE=0
+    - php: 7.1
+      env: WP_VERSION=latest WP_MULTISITE=1
+  fast_finish: true
 
 install: 
   - composer install --dev
@@ -66,7 +71,6 @@ before_script:
   - |
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
       composer global require wp-coding-standards/wpcs
-      vendor/bin/phpcs
     fi
 
 script:
