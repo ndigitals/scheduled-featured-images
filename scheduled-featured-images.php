@@ -26,8 +26,8 @@
 
 namespace NDS\ScheduledFeaturedImages;
 
-// Due to namespace usage we require PHP >= 5.3.0.
-if ( ! function_exists( 'version_compare' ) || version_compare( PHP_VERSION, '5.3.0', '<' ) ) {
+// Due to namespace usage and composer package requirements we require PHP >= 5.5.0.
+if ( ! function_exists( 'version_compare' ) || version_compare( PHP_VERSION, '5.5.0', '<' ) ) {
 	exit;
 }
 

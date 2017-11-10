@@ -20,15 +20,8 @@ cache:
 
 matrix:
   include:
-    - php: 5.3
-      env: WP_VERSION=latest WP_MULTISITE=0
-    - php: 5.3
-      env: WP_VERSION=latest WP_MULTISITE=1
-    - php: 5.4
-      env: WP_VERSION=latest WP_MULTISITE=0
-    - php: 5.4
-      env: WP_VERSION=latest WP_MULTISITE=1
-    - php: 5.5
+
+- php: 5.5
       env: WP_VERSION=latest WP_MULTISITE=0
     - php: 5.5
       env: WP_VERSION=latest WP_MULTISITE=1
@@ -55,7 +48,7 @@ matrix:
   fast_finish: true
 
 install: 
-  - composer install --dev
+  - composer install
 
 before_script:
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
