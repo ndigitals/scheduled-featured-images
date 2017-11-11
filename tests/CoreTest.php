@@ -1,22 +1,21 @@
 <?php
 /**
- * Class ActivatorTest
+ * Class CoreTest
  *
  * @package NDS\ScheduledFeaturedImages
- * @subpackage NDS\ScheduledFeaturedImages\Tests\Common
+ * @subpackage NDS\ScheduledFeaturedImages\Tests
  */
 
-namespace NDS\ScheduledFeaturedImages\Test\Common;
+namespace NDS\ScheduledFeaturedImages\Test;
 
 use PHPUnit\Framework\TestCase;
 use WP_UnitTestCase;
 use NDS\ScheduledFeaturedImages;
-use NDS\ScheduledFeaturedImages\Common;
 
 /**
- * Activator test case.
+ * Core test case.
  */
-class ActivatorTest extends WP_UnitTestCase {
+class CoreTest extends WP_UnitTestCase {
 
 	/**
 	 * A single example test.

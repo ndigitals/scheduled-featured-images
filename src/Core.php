@@ -27,6 +27,51 @@ use NDS\ScheduledFeaturedImages\Frontend;
 class Core {
 
 	/**
+	 * The current version of the plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $version    The current version of the plugin.
+	 */
+	protected $version = '1.0.0';
+	
+	/**
+	 * The unique identifier of this plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
+	 */
+	protected $plugin_name = 'scheduled-featured-images';
+
+	/**
+	 * The plugin system path.
+	 * 
+	 * @since			1.0.0
+	 * @access		protected
+	 * @var				string		$plugin_path		The plugin system path.
+	 */
+	protected $plugin_path;
+	
+	/**
+	 * The plugin base directory.
+	 * 
+	 * @since			1.0.0
+	 * @access		protected
+	 * @var				string		$plugin_dir		The plugin base directory.
+	 */
+	protected $plugin_dir;
+
+	/**
+	 * The plugin URL.
+	 * 
+	 * @since			1.0.0
+	 * @access		protected
+	 * @var				string		$plugin_url		The plugin URL.
+	 */
+	protected $plugin_url;
+
+	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
@@ -35,24 +80,6 @@ class Core {
 	 * @var      Scheduled_Featured_Images_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
-
-	/**
-	 * The unique identifier of this plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
-	 */
-	protected $plugin_name;
-
-	/**
-	 * The current version of the plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $version    The current version of the plugin.
-	 */
-	protected $version;
 
 	/**
 	 * Define the core functionality of the plugin.
@@ -66,13 +93,24 @@ class Core {
 	public function __construct() {
 		if ( defined( 'NDS_SFI_VERSION' ) ) {
 			$this->version = NDS_SFI_VERSION;
-		} else {
-			$this->version = '1.0.0';
 		}
 		if ( defined( 'NDS_SFI_NAME' ) ) {
 			$this->plugin_name = NDS_SFI_NAME;
+		}
+		if ( defined( 'NDS_SFI_PATH' ) ) {
+			$this->plugin_path = NDS_SFI_PATH;
 		} else {
-			$this->plugin_name = 'scheduled-featured-images';
+			$this->plugin_path = trailingslashit( dirname( __FILE__, 2 ) );
+		}
+		if ( defined( 'NDS_SFI_DIR' ) ) {
+			$this->plugin_dir = NDS_SFI_DIR;
+		} else {
+			$this->plugin_dir = basename( $this->plugin_path );
+		}
+		if ( defined( 'NDS_SFI_URL' ) ) {
+			$this->plugin_dir = NDS_SFI_URL;
+		} else {
+			$this->plugin_url = str_replace( array( 'http:', 'https:' ), '', plugin_dir_url( __FILE__ ) );
 		}
 
 		$this->load_dependencies();
