@@ -6,12 +6,10 @@
  * @subpackage NDS\ScheduledFeaturedImages\Tests\Common
  */
 
-namespace NDS\ScheduledFeaturedImages\Test\Common;
+namespace NDS\ScheduledFeaturedImages\Common;
 
 use PHPUnit\Framework\TestCase;
 use WP_UnitTestCase;
-use NDS\ScheduledFeaturedImages;
-use NDS\ScheduledFeaturedImages\Common;
 
 /**
  * Activator test case.

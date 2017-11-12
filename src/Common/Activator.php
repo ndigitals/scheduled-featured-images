@@ -32,7 +32,7 @@ class Activator {
 	public static function activate( $network_wide ) {
 		if ( function_exists( 'is_multisite' ) && is_multisite() ) {
 			if ( $network_wide ) {
-					// Get all blog ids
+					// Get all blog ids.
 					$blog_ids = self::get_blog_ids();
 
 				foreach ( $blog_ids as $blog_id ) {

@@ -18,6 +18,7 @@ use NDS\ScheduledFeaturedImages\Common;
 use NDS\ScheduledFeaturedImages\Admin;
 use NDS\ScheduledFeaturedImages\Frontend;
 
+
 /**
  * The core plugin class.
  *
@@ -34,7 +35,7 @@ class Core {
 	 * @var      string    $version    The current version of the plugin.
 	 */
 	protected $version = '1.0.0';
-	
+
 	/**
 	 * The unique identifier of this plugin.
 	 *
@@ -46,28 +47,28 @@ class Core {
 
 	/**
 	 * The plugin system path.
-	 * 
-	 * @since			1.0.0
-	 * @access		protected
-	 * @var				string		$plugin_path		The plugin system path.
+	 *
+	 * @since           1.0.0
+	 * @access      protected
+	 * @var             string      $plugin_path        The plugin system path.
 	 */
 	protected $plugin_path;
-	
+
 	/**
 	 * The plugin base directory.
-	 * 
-	 * @since			1.0.0
-	 * @access		protected
-	 * @var				string		$plugin_dir		The plugin base directory.
+	 *
+	 * @since           1.0.0
+	 * @access      protected
+	 * @var             string      $plugin_dir     The plugin base directory.
 	 */
 	protected $plugin_dir;
 
 	/**
 	 * The plugin URL.
-	 * 
-	 * @since			1.0.0
-	 * @access		protected
-	 * @var				string		$plugin_url		The plugin URL.
+	 *
+	 * @since           1.0.0
+	 * @access      protected
+	 * @var             string      $plugin_url     The plugin URL.
 	 */
 	protected $plugin_url;
 
@@ -100,7 +101,7 @@ class Core {
 		if ( defined( 'NDS_SFI_PATH' ) ) {
 			$this->plugin_path = NDS_SFI_PATH;
 		} else {
-			$this->plugin_path = trailingslashit( dirname( __FILE__, 2 ) );
+				$this->plugin_path = trailingslashit( Common\Util::dirname_r( __FILE__, 2 ) );
 		}
 		if ( defined( 'NDS_SFI_DIR' ) ) {
 			$this->plugin_dir = NDS_SFI_DIR;

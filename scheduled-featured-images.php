@@ -35,47 +35,10 @@ if ( ! function_exists( 'version_compare' ) || version_compare( PHP_VERSION, '5.
 defined( 'WPINC' ) || die;
 
 /**
- * Define plugin name global.
- */
-if ( ! defined( 'NDS_SFI_NAME' ) ) {
-	define( 'NDS_SFI_NAME', 'scheduled-featured-images' );
-}
-
-/**
- * Define plugin version global.
- */
-if ( ! defined( 'NDS_SFI_VERSION' ) ) {
-	define( 'NDS_SFI_VERSION', '1.0.0' );
-}
-
-/**
- * Define a plugin system path global so we don't have to call the function
- */
-if ( ! defined( 'NDS_SFI_PATH' ) ) {
-	define( 'NDS_SFI_PATH', plugin_dir_path( __FILE__ ) );
-}
-
-/**
- * Define a plugin directory global so we don't have to call functions
- */
-if ( ! defined( 'NDS_SFI_DIR' ) ) {
-	define( 'NDS_SFI_DIR', basename( NDS_SFI_PATH ) );
-}
-
-/**
- * Define a plugin URL global so we don't have to call the function
- *
- * NOTE: Protocol stripped in order to provide an agnostic URL reference
- */
-if ( ! defined( 'NDS_SFI_URL' ) ) {
-	define( 'NDS_SFI_URL', str_replace( array( 'http:', 'https:' ), '', plugin_dir_url( __FILE__ ) ) );
-}
-
-/**
- * Check for an load the PSR-4 autoloader
+ * Check for and load the PSR-4 autoloader, built by Composer.
  */
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
-	require( __DIR__ . '/vendor/autoload.php' );
+	require_once( __DIR__ . '/vendor/autoload.php' );
 }
 
 use NDS\ScheduledFeaturedImages\Common;
