@@ -8,8 +8,8 @@
 /**
  * Check for and load the PSR-4 autoloader, built by Composer.
  */
-if ( file_exists( dirname(__DIR__) . '/vendor/autoload.php' ) ) {
-	require_once( dirname(__DIR__) . '/vendor/autoload.php' );
+if ( file_exists( dirname( __DIR__ ) . '/vendor/autoload.php' ) ) {
+	require_once( dirname( __DIR__ ) . '/vendor/autoload.php' );
 }
 
 $_tests_dir = getenv( 'WP_TESTS_DIR' );
