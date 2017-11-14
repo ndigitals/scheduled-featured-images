@@ -95,13 +95,10 @@ class Core {
 		if ( defined( 'NDS_SFI_VERSION' ) ) {
 			$this->version = NDS_SFI_VERSION;
 		}
-		if ( defined( 'NDS_SFI_NAME' ) ) {
-			$this->plugin_name = NDS_SFI_NAME;
-		}
 		if ( defined( 'NDS_SFI_PATH' ) ) {
 			$this->plugin_path = NDS_SFI_PATH;
 		} else {
-				$this->plugin_path = trailingslashit( Common\Util::dirname_r( __FILE__, 2 ) );
+			$this->plugin_path = trailingslashit( Common\Util::dirname_r( __FILE__, 2 ) );
 		}
 		if ( defined( 'NDS_SFI_DIR' ) ) {
 			$this->plugin_dir = NDS_SFI_DIR;
@@ -209,6 +206,16 @@ class Core {
 	 */
 	public function get_plugin_name() {
 		return $this->plugin_name;
+	}
+
+	/**
+	 * The directory path of the plugin.
+	 *
+	 * @since     1.0.0
+	 * @return    string    The directory path of the plugin.
+	 */
+	public function get_plugin_path() {
+		return $this->plugin_path;
 	}
 
 	/**
